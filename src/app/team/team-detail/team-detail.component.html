@@ -1,0 +1,4 @@
+<!-- <p>{{team.id}}</p> -->
+<li [ngClass]="['nav-item', getStyle()]">
+    <a class="nav-link " [routerLink]="['/teams', team.id]" >{{team.name}}</a>
+</li>

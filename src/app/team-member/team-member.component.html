@@ -1,0 +1,6 @@
+
+<div class="container-fluid">
+    <button type="button" class="btn btn-primary m-2 " (click)="Add()">Add Member</button>
+</div>
+<app-member-detail *ngFor="let member of members; let i = index" [emp]="member" [index]="i" 
+(delEvent)="Delete($event)" (updEvent)="Update($event)"></app-member-detail>

@@ -1,0 +1,7 @@
+<!-- <a routerLink="/teams/1">click</a>
+<a routerLink="/teams/2">2click</a>
+<p>teadfa</p> -->
+
+<ul class="nav flex-column">
+    <app-team-detail   app-team-detail *ngFor="let team of teams" [team]="team"></app-team-detail>
+<ul>

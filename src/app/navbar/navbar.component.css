@@ -1,0 +1,15 @@
+/* .nav-link{
+    color:whitesmoke
+}
+.nav-item{
+    border-radius: 10px;
+    border-color: whitesmoke;
+    border-style: groove;
+    border-width: 1px;
+}
+.nav-item:hover{
+    border-color: cornflowerblue;
+}
+.nav-item:hover .nav-link{
+    color: cornflowerblue;
+} */

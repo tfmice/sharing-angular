@@ -1,0 +1,22 @@
+<div class="container-fluid ">
+    <form class="bg-body-secondary p-3">
+        <div class="">
+            <button type="button" class="btn-danger btn " (click)="Delete()">Delete</button>
+            <button type="button" class="btn-warning btn mx-2" (click)="Update()">Update</button>
+        </div>
+        <label class="form-label ">Name</label>
+        <textarea class="form-control" type="text" [(ngModel)]="emp.name" name="name" ></textarea>
+        <label class="form-label ">Role</label>
+        <input class="form-control" type="text" [(ngModel)]="emp.role" name="role">
+        <label class="form-label ">Hobby</label>
+        <input class="form-control" class="form-control" type="text" [(ngModel)]="emp.hobby" name="hobby">
+        <label class="form-label ">Opinion</label>
+        <textarea class="form-control" type="text" [(ngModel)]="emp.opinion" name="opinion"></textarea>
+        <label class="form-label ">Quote</label>
+        <textarea class="form-control" type="text" [(ngModel)]="emp.quote" name="quote"></textarea>
+        <label class="form-label ">Birthdate</label>
+        <input class="form-control" type="date" [ngModel]="emp.birthdate | date:'yyyy-MM-dd'" (ngModelChange)="emp.birthdate= $event" name="startDate">
+    </form>
+
+</div>
+<hr>
